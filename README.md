@@ -9,12 +9,10 @@ Automatically switch Input Method (IME). It is only available on macOS.
 
 ## Installation
 
-1. Install [InputSourceSelector](https://github.com/minoki/InputSourceSelector):
+1. Install [macism](https://github.com/laishulu/macism):
     ```shell
-    $ git@github.com:minoki/InputSourceSelector.git
-    $ cd InputSourceSelector
-    $ make
-    $ sudo mv ./InputSourceSelector /usr/local/bin/
+    $ brew tap laishulu/macism
+    $ brew install macism
     ```
 2. Install nvim-auto-ime with your favorite package manager, e.g. Lazy
     ```lua
@@ -22,8 +20,7 @@ Automatically switch Input Method (IME). It is only available on macOS.
         'crispgm/nvim-auto-ime',
         config = function()
             require('auto-ime').setup({
-                ime_layout = 'com.apple.keylayout.PinyinKeyboard',
-                ime_method = 'com.apple.inputmethod.SCIM.ITABC',
+                ime_source = 'com.apple.inputmethod.SCIM.ITABC',
             })
         end
     }
@@ -34,10 +31,14 @@ Automatically switch Input Method (IME). It is only available on macOS.
 Default configuration:
 ```lua
 {
-    ime_english = 'com.apple.keylayout.ABC',
-    ime_layout = '', -- must be specified
-    ime_method = '', -- must be specified
+    ime_default = 'com.apple.keylayout.ABC',
+    ime_source = '', -- must be specified
 }
+```
+
+You may install [minoki/InputSourceSelector](https://github.com/minoki/InputSourceSelector) and running to list all enabled sources:
+```shell
+InputSourceSelector list-enabled
 ```
 
 ## License

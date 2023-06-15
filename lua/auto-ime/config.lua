@@ -1,9 +1,8 @@
 local M = {}
 
 M.options = {
-    ime_english = 'com.apple.keylayout.ABC',
-    ime_layout = '',
-    ime_method = '',
+    ime_default = 'com.apple.keylayout.ABC',
+    ime_source = '',
 }
 
 return M

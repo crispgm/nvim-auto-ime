@@ -16,8 +16,8 @@ function m.setup(opt)
     local selector = require('auto-ime.selector')
     vim.api.nvim_create_user_command('AutoIMEToggle', selector.toggle_ime, {})
     vim.api.nvim_create_user_command(
-        'AutoIMESwitchEn',
-        selector.switch_ime_en,
+        'AutoIMESwitchDefault',
+        selector.switch_ime_default,
         {}
     )
     vim.api.nvim_create_user_command(
@@ -30,7 +30,7 @@ function m.setup(opt)
     local augroup = vim.api.nvim_create_augroup('auto_ime', { clear = true })
     vim.api.nvim_create_autocmd(
         'InsertLeave',
-        { group = augroup, pattern = '*', command = 'AutoIMESwitchEn' }
+        { group = augroup, pattern = '*', command = 'AutoIMESwitchDefault' }
     )
 
     vim.g.auto_ime_selected = 'en'
