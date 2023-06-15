@@ -36,7 +36,7 @@ Default configuration:
 }
 ```
 
-You may install [minoki/InputSourceSelector](https://github.com/minoki/InputSourceSelector) and running to list all enabled sources:
+You may install [minoki/InputSourceSelector](https://github.com/minoki/InputSourceSelector) and list all enabled sources:
 ```shell
 InputSourceSelector list-enabled
 ```
