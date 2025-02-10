@@ -1,6 +1,6 @@
 # nvim-auto-ime
 
-Automatically switch Input Method (IME). It is only available on macOS.
+Automatically switch Input Method Editor (IME). It is only available on macOS.
 
 ## Features
 
@@ -43,4 +43,4 @@ InputSourceSelector list-enabled
 
 ## License
 
-Copyright (c) David Zhang, 2023.
+Copyright (c) David Zhang, 2025.
