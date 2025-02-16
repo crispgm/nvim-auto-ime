@@ -11,7 +11,7 @@ Automatically switch Input Method Editor (IME). It is only available on macOS.
 
 1. Install [macism](https://github.com/laishulu/macism):
     ```shell
-    $ brew tap laishulu/macism
+    $ brew tap laishulu/homebrew
     $ brew install macism
     ```
 2. Install nvim-auto-ime with your favorite package manager, e.g. Lazy
